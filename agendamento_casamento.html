@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Rafael Lima Fotografia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_agendamento.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="topo">
+            <h1>AGENDE SEU CASAMENTO</h1>
+            <p>Preencha os dados abaixo para solicitar seu agendamento.</p>
+        </div>
+
+        <!-- FORMULARIO PARA CASAMENTO -->
+        <form class="formulario" action="#" id="casamento">
+            <h2>1. DETALHES</h2>
+            <div class="names">
+                <div class="nome">
+                <input type="text" placeholder="SEU NOME" required min="1" max="30">
+                </div>
+
+                <div class="nome-companheiro">
+                <input type="text" placeholder="NOME DO(A) COMPANHEIRO(A)" required min="1" max="30">
+                </div>
+            </div>
+            
+            <div class="dados">
+                <div class="email">
+                <input type="email" placeholder="DIGITE SEU E-MAIL" required min="5" max="30">
+                </div>
+
+                <div class="telefone">
+                <input type="number" placeholder="DIGITE SEU TELEFONE" required>
+                </div>
+            </div>
+            
+
+            <div class="infos-pacote">
+            <div class="data-evento">
+            <input type="date" placeholder="DATA DO EVENTO" required>
+            </div>
+
+            <div class="local-evento">
+            <input type="text" placeholder="LOCAL DO EVENTO" required max="50">
+            </div>   
+            </div>
+
+        </form>
+
+        <div class="comando">
+            <a href="#"><button class="finalizar">Finalizar reserva</button></a>
+            <a href="pacotes.html"><button class="voltar">Voltar</button></a>
+            </div>s
+    </div>
+
+</body>
+</html>
