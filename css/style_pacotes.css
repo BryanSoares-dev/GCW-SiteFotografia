@@ -10,10 +10,8 @@ body{
     font-family: "Cormorant Garamond", serif;
 }
 
-/* =========================== */
-/* CONTAINER PRINCIPAL */
-/* =========================== */
 
+/* CONTAINER PRINCIPAL */
 .geral{
     width: 100%;
 
@@ -26,10 +24,8 @@ body{
     padding: 40px 50px;
 }
 
-/* =========================== */
-/* TEXTO */
-/* =========================== */
 
+/* TEXTO */
 .apresentacao{
     width: 45%;
     margin-top: 60px;
@@ -47,10 +43,8 @@ h1{
     width: 90%;
 }
 
-/* =========================== */
-/* PACOTES */
-/* =========================== */
 
+/* PACOTES */
 .pacotes{
     width: 55%;
 
@@ -61,12 +55,10 @@ h1{
     flex-wrap: wrap;
 }
 
-/* =========================== */
-/* CARD */
-/* =========================== */
 
+/* CARD */
 .card-pacote{
-    width: 300px;
+    width: 250px;
     height: 600px;
     background: #e7dfd1;
     border: 1px solid #777;
@@ -133,20 +125,16 @@ h1{
     transform: scale(1.03);
 }
 
-/* =========================== */
-/* FOOTER */
-/* =========================== */
 
+/* FOOTER */
 .foot2{
     width: 100%;
     background-color: black;
     margin-top: 50px;
 }
 
-/* =========================== */
-/* RESPONSIVO */
-/* =========================== */
 
+/* RESPONSIVO */
 @media (max-width: 1200px){
 
     .geral{

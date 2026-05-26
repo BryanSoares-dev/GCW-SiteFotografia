@@ -11,10 +11,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* =========================== */
-/* MAIN */
-/* =========================== */
 
+/* MAIN */
 main{
     width: 100%;
 
@@ -37,10 +35,24 @@ button{
     margin-top: 15px;
 }
 
-/* =========================== */
-/* CONTAINER GERAL */
-/* =========================== */
+.sessao-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
+.sessao{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sessao:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+
+/* CONTAINER GERAL */
 .container-contato{
     display: flex;
     justify-content: space-between;
@@ -51,10 +63,8 @@ button{
     margin: auto;
 }
 
-/* =========================== */
-/* INFORMAÇÕES */
-/* =========================== */
 
+/* INFORMAÇÕES */
 .total-sessao{
     margin-left: -100px;
     display: flex;
@@ -81,19 +91,16 @@ button{
     color: rgba(0,0,0,0.8);
 }
 
-/* =========================== */
+
 /* FORMULÁRIO */
-/* =========================== */
 
 .caixa-form{
     padding: 40px;
     width: 50%;
 }
 
-/* =========================== */
-/* TÍTULO */
-/* =========================== */
 
+/* TÍTULO */
 .forms-titulo{
     margin-bottom: 30px;
 
@@ -102,18 +109,14 @@ button{
     font-size: 35px;
 }
 
-/* =========================== */
-/* FORM */
-/* =========================== */
 
+/* FORM */
 form{
     width: 100%;
 }
 
-/* =========================== */
-/* INPUTS */
-/* =========================== */
 
+/* INPUTS */
 .nome,
 .email,
 .descricao{
@@ -134,10 +137,8 @@ form{
     resize: vertical;
 }
 
-/* =========================== */
-/* BOTÃO */
-/* =========================== */
 
+/* BOTÃO */
 .enviar{
     width: 100%;
 
@@ -161,10 +162,8 @@ form{
     opacity: 0.9;
 }
 
-/* =========================== */
-/* FOOTER */
-/* =========================== */
 
+/* FOOTER */
 .foot4{
     background-color: black;
 
@@ -176,15 +175,111 @@ form{
 .foot5{
     background-color: black;
 
-    margin-top: 270px;
+    margin-top: 120px;
 
     width: 100%;
 }
 
-/* =========================== */
-/* TABLETS */
-/* =========================== */
 
+/* TELA DE SUCESSO */
+.sucesso-box{
+    background-color: rgba(255,255,255,0.35);
+
+    padding: 60px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+
+}
+
+.icone-sucesso{
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    background-color: #F3736D;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 45px;
+
+    color: white;
+
+    margin-bottom: 25px;
+
+}
+
+.titulo-sucesso{
+    background: none;
+
+    width: 100%;
+
+    padding: 0;
+
+    margin-bottom: 15px;
+
+    font-size: 38px;
+
+    color: #222;
+
+    font-weight: 700;
+}
+
+.texto-sucesso{
+    font-size: 18px;
+
+
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+
+    max-width: 500px;
+}
+
+.btn-voltar{
+    background-color: #F3736D;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 16px 40px;
+
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(243,115,109,0.3);
+}
+
+.btn-voltar:hover{
+    transform: translateY(-3px);
+
+    background-color: #df5f59;
+
+    box-shadow: 0 8px 20px rgba(243,115,109,0.4);
+}
+
+
+/* TABLETS */
 @media (max-width: 1024px){
 
     main{
@@ -211,10 +306,8 @@ form{
     }
 }
 
-/* =========================== */
-/* CELULARES */
-/* =========================== */
 
+/* CELULARES */
 @media (max-width: 768px){
 
     main{
@@ -261,12 +354,28 @@ form{
     .foot4{
         margin-top: 60px;
     }
+
+    .sucesso-box{
+    padding: 40px 25px;
+    }
+
+    .titulo-sucesso{
+        font-size: 28px;
+    }
+
+    .texto-sucesso{
+        font-size: 16px;
+    }
+
+    .icone-sucesso{
+        width: 75px;
+        height: 75px;
+        font-size: 35px;
+    }
 }
 
-/* =========================== */
-/* TELAS MUITO PEQUENAS */
-/* =========================== */
 
+/* TELAS MUITO PEQUENAS */
 @media (max-width: 480px){
 
     main{

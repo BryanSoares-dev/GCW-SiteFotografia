@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background-color: rgba(0, 0, 0, 0.12);
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* CONTAINER */
+.reserva-container{
+    width: 100%;
+    max-width: 750px;
+
+    background-color: #F7F3ED;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    overflow: hidden;
+}
+
+
+/* TOPO */
+.reserva-topo{
+    background-color: #C4A77D;
+
+    padding: 35px 20px;
+
+    text-align: center;
+}
+
+.reserva-topo h1{
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 3rem;
+
+    font-weight: 600;
+
+    color: rgba(0,0,0,0.85);
+}
+
+
+/* CONTEÚDO */
+
+.reserva-conteudo{
+    padding: 40px;
+}
+
+
+/* CARDS */
+.info-box{
+    background-color: #ffffff;
+
+    border-left: 6px solid #C4A77D;
+
+    padding: 18px 22px;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+.info-box:hover{
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+
+/* TEXTOS */
+.label{
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: rgba(0,0,0,0.55);
+
+    margin-bottom: 6px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.valor{
+    font-size: 18px;
+
+    color: rgba(0,0,0,0.82);
+
+    word-break: break-word;
+}
+
+
+/* BOTÃO */
+.btn-voltar{
+    display: block;
+
+    width: 100%;
+    max-width: 250px;
+
+    margin: 35px auto 0 auto;
+
+    padding: 15px;
+
+    text-align: center;
+
+    background-color: #F3736D;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.btn-voltar:hover{
+    transform: scale(1.02);
+
+    opacity: 0.9;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px){
+
+    .reserva-topo h1{
+        font-size: 2.2rem;
+    }
+
+    .reserva-conteudo{
+        padding: 25px 20px;
+    }
+
+    .valor{
+        font-size: 16px;
+    }
+
+    .btn-voltar{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px){
+
+    body{
+        padding: 20px 10px;
+    }
+
+    .reserva-topo{
+        padding: 25px 15px;
+    }
+
+    .reserva-topo h1{
+        font-size: 1.8rem;
+    }
+
+    .info-box{
+        padding: 15px;
+    }
+
+    .valor{
+        font-size: 15px;
+    }
+}

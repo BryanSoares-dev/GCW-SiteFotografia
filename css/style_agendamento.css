@@ -20,10 +20,8 @@ body{
     overflow-x: hidden;
 }
 
-/* =========================== */
-/* CONTAINER */
-/* =========================== */
 
+/* CONTAINER */
 .container{
     width: 100%;
 
@@ -38,10 +36,8 @@ body{
 
 }
 
-/* =========================== */
-/* TOPO */
-/* =========================== */
 
+/* TOPO */
 .topo{
     background-color: #C4A77D;
 
@@ -68,10 +64,8 @@ body{
     line-height: 1.5;
 }
 
-/* =========================== */
-/* FORMULÁRIO */
-/* =========================== */
 
+/* FORMULÁRIO */
 .formulario{
     padding: 40px 50px;
 
@@ -80,10 +74,8 @@ body{
     align-items: center;
 }
 
-/* =========================== */
-/* TÍTULOS */
-/* =========================== */
 
+/* TÍTULOS */
 h2{
     width: 100%;
 
@@ -94,10 +86,8 @@ h2{
     font-size: 28px;
 }
 
-/* =========================== */
-/* CAMPOS */
-/* =========================== */
 
+/* CAMPOS */
 label{
     display: block;
 
@@ -122,10 +112,8 @@ input::placeholder{
     color: black;
 }
 
-/* =========================== */
-/* LINHAS */
-/* =========================== */
 
+/* LINHAS */
 .dados,
 .names,
 .infos-pacote{
@@ -136,10 +124,8 @@ input::placeholder{
     gap: 25px;
 }
 
-/* =========================== */
-/* COLUNAS */
-/* =========================== */
 
+/* COLUNAS */
 .email,
 .telefone,
 .nome-companheiro,
@@ -149,34 +135,35 @@ input::placeholder{
     width: 100%;
 }
 
-/* =========================== */
-/* ESPAÇAMENTOS */
-/* =========================== */
 
+/* ESPAÇAMENTOS */
 .email,
 .telefone{
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-/* =========================== */
+
 /* BOTÕES */
-/* =========================== */
+.envio{
+    background-color: #F3736D;
+    width: 50%;
+    margin-top: 20px;
 
-.comando{
-    display: flex;
-
-    justify-content: center;
-
-    gap: 20px;
-
-    width: 100%;
-
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding: 12px 28px;
+    border: none;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.finalizar,
+.envio:hover,
+.voltar:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
 .voltar{
     padding: 12px 28px;
 
@@ -186,9 +173,6 @@ input::placeholder{
 
     color: black;
 
-    cursor: pointer;
-
-    transition: 0.3s;
 }
 
 .finalizar{
@@ -197,6 +181,10 @@ input::placeholder{
 
 .voltar{
     background-color: #e9ab5e;
+    margin-left: 220px;
+    width: 43.2%;
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 .finalizar:hover,
@@ -210,10 +198,8 @@ a{
     text-decoration: none;
 }
 
-/* =========================== */
-/* TABLETS */
-/* =========================== */
 
+/* TABLETS */
 @media (max-width: 1024px){
 
     .container{
@@ -229,10 +215,8 @@ a{
     }
 }
 
-/* =========================== */
-/* CELULARES */
-/* =========================== */
 
+/* CELULARES */
 @media (max-width: 768px){
 
     body{
@@ -281,13 +265,10 @@ a{
         padding: 14px 16px;
     }
 
-    .comando{
-        flex-direction: column;
-    }
 
   .finalizar,
 .voltar{
-    width: 50%;
+    width: 45.2%;
 
     font-size: 16px;
 
@@ -297,10 +278,8 @@ a{
 }
 }
 
-/* =========================== */
-/* TELAS MUITO PEQUENAS */
-/* =========================== */
 
+/* TELAS MUITO PEQUENAS */
 @media (max-width: 480px){
 
     .topo h1{

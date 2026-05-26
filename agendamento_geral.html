@@ -20,43 +20,41 @@
         </div>
 
         <!-- FORMULARIO PARA EVENTOS -->
-         <form class="formulario" action="#" id="evento">
+         <form class="formulario" action="agendamento_confirmado2.php" method="post">
             <h2>1. DETALHES</h2>
             <div class="names">
                 <div class="name">
-                <input type="text" placeholder="SEU NOME" required min="1" max="30">
+                <input type="text" name="nome1" placeholder="SEU NOME" required min="1" max="30">
                 </div>
 
             </div>
             
             <div class="dados">
                 <div class="email">
-                <input type="email" placeholder="DIGITE SEU E-MAIL" required min="5" max="30">
+                <input type="email" name="email" placeholder="DIGITE SEU E-MAIL" required min="5" max="30">
                 </div>
 
                 <div class="telefone">
-                <input type="number" placeholder="DIGITE SEU TELEFONE" required min="8" max="12">
+                <input type="tel" name="tel" placeholder="DIGITE SEU TELEFONE" required min="8" max="12">
                 </div>
             </div>
             
 
             <div class="infos-pacote">
             <div class="data-evento">
-            <input type="date" placeholder="DATA DO EVENTO" required>
+            <input type="date" name="data" placeholder="DATA DO EVENTO" required>
             </div>
 
             <div class="local-evento">
-            <input type="text" placeholder="LOCAL DO EVENTO" required max="50">
+            <input type="text" name="local" placeholder="LOCAL DO EVENTO" required max="50">
             </div>   
             </div>
 
+            <input type="submit" class="envio" value="Enviar">
+
         </form>
 
-        <div class="comando">
-            <a href="#"><button class="finalizar">Finalizar reserva</button></a>
-            <a href="pacotes.html"><button class="voltar">Voltar</button></a>
-            </div>
-    </div>
+        <a href="pacotes.html"><button class="voltar">Voltar</button></a>
 
 </body>
 </html>

@@ -12,10 +12,8 @@ body{
     font-family: "Playfair Display", serif;
 }
 
-/* =========================== */
-/* FUNDO HOME */
-/* =========================== */
 
+/* FUNDO HOME */
 .home_fundo{
     background-image: url(../img/fundo.jpg);
 
@@ -30,10 +28,8 @@ body{
     flex-direction: column;
 }
 
-/* =========================== */
-/* ANIMAÇÃO */
-/* =========================== */
 
+/* ANIMAÇÃO */
 @keyframes slideIn{
     from{
         opacity: 0;
@@ -46,10 +42,8 @@ body{
     }
 }
 
-/* =========================== */
-/* TEXTOS */
-/* =========================== */
 
+/* TEXTOS */
 h1{
     font-size: 95px;
     line-height: 1.1;
@@ -75,20 +69,16 @@ li{
     padding: 0;
 }
 
-/* =========================== */
-/* LINHA */
-/* =========================== */
 
+/* LINHA */
 hr{
     background-color: white;
     border: none;
     height: 1px;
 }
 
-/* =========================== */
-/* HOME */
-/* =========================== */
 
+/* HOME */
 .home{
     display: flex;
     flex-direction: column;
@@ -100,10 +90,8 @@ hr{
     margin-top: 100px;
 }
 
-/* =========================== */
-/* ANIMAÇÕES */
-/* =========================== */
 
+/* ANIMAÇÕES */
 .home h1,
 .home .slogan,
 .home a{
@@ -128,10 +116,8 @@ hr{
     animation-delay: 0.6s;
 }
 
-/* =========================== */
-/* BOTÃO */
-/* =========================== */
 
+/* BOTÃO */
 button{
     border: none;
     border-radius: 100px;
@@ -155,10 +141,8 @@ button:hover{
     opacity: 0.9;
 }
 
-/* =========================== */
-/* FOOTER */
-/* =========================== */
 
+/* FOOTER */
 footer{
     margin-top: auto;
 
@@ -169,10 +153,8 @@ footer{
     padding: 20px;
 }
 
-/* =========================== */
-/* TABLETS */
-/* =========================== */
 
+/* TABLETS */
 @media (max-width: 1024px){
 
     .home{
@@ -195,10 +177,8 @@ footer{
     }
 }
 
-/* =========================== */
-/* CELULARES */
-/* =========================== */
 
+/* CELULARES */
 @media (max-width: 768px){
 
     .home{
@@ -228,10 +208,8 @@ footer{
     }
 }
 
-/* =========================== */
-/* TELAS MUITO PEQUENAS */
-/* =========================== */
 
+/* TELAS MUITO PEQUENAS */
 @media (max-width: 480px){
 
     .home{
