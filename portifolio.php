@@ -12,12 +12,12 @@
         <div class="menu">
         <img class="logo" src="img/logo.png" alt="logomarca" height="80px" width="250px">
         <ul>
-            <a href="index.html"><li>Inicio</li></a>
-            <a href="portifolio.html"><li>Portifólio</li></a>
-            <a href="pacotes.html"><li>Serviços e Pacotes</li></a>
-            <a href="sobre.html"><li>Sobre mim</li></a>
-            <a href="contato.html"><li>Contato</li></a>
-        </ul>
+                <a href="index.php"><li>Inicio</li></a>
+                <a href="portifolio.php"><li>Portfólio</li></a>
+                <a href="pacotes.php"><li>Serviços e Pacotes</li></a>
+                <a href="sobre.php"><li>Sobre Mim</li></a>
+                <a href="contato.php"><li>Contato</li></a>
+            </ul>
         </div>
     </header>
     <hr>
@@ -44,151 +44,151 @@
 
                       <!-- APENAS FOTOS DE EVENTOS -->
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento1.jpg" alt="Casamento">
+            <img src="img/evento/evento1.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento2.jpg" alt="Casamento">
+            <img src="img/evento/evento2.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento3.jpg" alt="Evento">
+            <img src="img/evento/evento3.jpg" loading="lazy" alt="Evento">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento4.jpg" alt="Ensaio">
+            <img src="img/evento/evento4.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento5.jpg" alt="Ensaio">
+            <img src="img/evento/evento5.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento6.jpg" alt="Ensaio">
+            <img src="img/evento/evento6.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento7.jpg" alt="Casamento">
+            <img src="img/evento/evento7.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento8.jpg" alt="Casamento">
+            <img src="img/evento/evento8.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento9.jpg" alt="Evento">
+            <img src="img/evento/evento9.jpg" loading="lazy" alt="Evento">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento10.jpg" alt="Ensaio">
+            <img src="img/evento/evento10.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento11.jpg" alt="Ensaio">
+            <img src="img/evento/evento11.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="eventos">
-            <img src="img/evento/evento12.jpg" alt="Ensaio">
+            <img src="img/evento/evento12.jpg" loading="lazy" alt="Ensaio">
         </div>
 
 
             <!-- APENAS FOTOS DE CASAMENTOS -->
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento1.jpg" alt="Casamento">
+            <img src="img/casamento/casamento1.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento2.jpg" alt="Casamento">
+            <img src="img/casamento/casamento2.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento3.jpg" alt="Evento">
+            <img src="img/casamento/casamento3.jpg" loading="lazy" alt="Evento">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento4.jpg" alt="Ensaio">
+            <img src="img/casamento/casamento4.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento5.jpg" alt="Ensaio">
+            <img src="img/casamento/casamento5.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento6.jpg" alt="Ensaio">
+            <img src="img/casamento/casamento6.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento7.jpg" alt="Casamento">
+            <img src="img/casamento/casamento7.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento8.jpg" alt="Casamento">
+            <img src="img/casamento/casamento8.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento9.jpg" alt="Evento">
+            <img src="img/casamento/casamento9.jpg" loading="lazy" alt="Evento">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento10.jpg" alt="Ensaio">
+            <img src="img/casamento/casamento10.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento11.jpg" alt="Ensaio">
+            <img src="img/casamento/casamento11.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="casamentos">
-            <img src="img/casamento/casamento12.jpg" alt="Ensaio">
+            <img src="img/casamento/casamento12.jpg" loading="lazy" alt="Ensaio">
         </div>
 
 
         <!-- APENAS FOTOS DE ENSAIOS -->
          <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio1.jpg" alt="Casamento">
+            <img src="img/ensaio/ensaio1.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio2.jpg" alt="Casamento">
+            <img src="img/ensaio/ensaio2.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio3.jpg" alt="Evento">
+            <img src="img/ensaio/ensaio3.jpg" loading="lazy" alt="Evento">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio4.jpg" alt="Ensaio">
+            <img src="img/ensaio/ensaio4.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio5.jpg" alt="Ensaio">
+            <img src="img/ensaio/ensaio5.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio6.jpg" alt="Ensaio">
+            <img src="img/ensaio/ensaio6.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio7.jpg" alt="Casamento">
+            <img src="img/ensaio/ensaio7.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio8.jpg" alt="Casamento">
+            <img src="img/ensaio/ensaio8.jpg" loading="lazy" alt="Casamento">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio9.jpg" alt="Evento">
+            <img src="img/ensaio/ensaio9.jpg" loading="lazy" alt="Evento">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio10.jpg" alt="Ensaio">
+            <img src="img/ensaio/ensaio10.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio11.jpg" alt="Ensaio">
+            <img src="img/ensaio/ensaio11.jpg" loading="lazy" alt="Ensaio">
         </div>
 
         <div class="foto" data-categoria="ensaios">
-            <img src="img/ensaio/ensaio12.jpg" alt="Ensaio">
+            <img src="img/ensaio/ensaio12.jpg" loading="lazy" alt="Ensaio">
         </div>
 
     </main>

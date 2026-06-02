@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +13,12 @@
         <div class="menu">
         <img class="logo" src="img/logo.png" alt="logomarca" height="80px" width="250px">
         <ul>
-            <a href="index.html"><li>Inicio</li></a>
-            <a href="portifolio.html"><li>Portifólio</li></a>
-            <a href="pacotes.html"><li>Serviços e Pacotes</li></a>
-            <a href="sobre.html"><li>Sobre mim</li></a>
-            <a href="contato.html"><li>Contato</li></a>
-        </ul>
+                <a href="index.php"><li>Inicio</li></a>
+                <a href="portifolio.php"><li>Portfólio</li></a>
+                <a href="pacotes.php"><li>Serviços e Pacotes</li></a>
+                <a href="sobre.php"><li>Sobre Mim</li></a>
+                <a href="contato.php"><li>Contato</li></a>
+            </ul>
         </div>
     </header>
     <hr style="background-color: black;">

@@ -9,64 +9,78 @@
 body{
     width: 100%;
     overflow-x: hidden;
-    padding: 0;
-    margin: 0;
 }
 
 
 /* TÍTULOS */
 h1{
     font-size: 50px;
-    color: rgba(0, 0, 0, 0.767);
     text-align: center;
+    color: rgba(0,0,0,.8);
+
     margin-top: 30px;
     padding: 0 15px;
 }
 
 h2{
     font-family: "Birthstone", cursive;
-    font-weight: 400;
-    font-style: normal;
     font-size: 60px;
+    font-weight: 400;
+
     text-align: center;
+
     margin-top: -40px;
-    color: rgba(0, 0, 0, 0.767);
+
+    color: rgba(0,0,0,.8);
 }
 
 
 /* TEXTO */
 p{
-    font-size: 23px;
     width: 100%;
     max-width: 700px;
-    text-align: justify;
-    color: rgba(0, 0, 0, 0.767);
+
+    font-size: 23px;
     line-height: 1.7;
+
+    text-align: justify;
+
+    color: rgba(0,0,0,.8);
 }
 
 
-/* CONTAINER SOBRE */
+/* SOBRE */
 .sobre{
     width: 100%;
+
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding: 50px;
+    align-items: center;
     flex-wrap: wrap;
+
+    gap: 50px;
+
+    padding: 50px;
+}
+
+.sobre img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
 /* FOOTER */
 .foot3{
-    background-color: black;
-    margin-top: 100px;
     width: 100%;
+    margin-top: 100px;
+
+    background-color: black;
 }
 
 
 /* TABLETS */
-@media (max-width: 1024px){
+@media (max-width:1024px){
 
     h1{
         font-size: 42px;
@@ -90,7 +104,7 @@ p{
 
 
 /* CELULARES */
-@media (max-width: 768px){
+@media (max-width:768px){
 
     h1{
         font-size: 34px;
@@ -103,7 +117,6 @@ p{
 
     p{
         font-size: 18px;
-        text-align: justify;
         max-width: 100%;
     }
 
@@ -114,9 +127,7 @@ p{
     }
 
     .sobre img{
-        width: 100%;
         max-width: 350px;
-        height: auto;
     }
 
     .foot3{
@@ -125,8 +136,8 @@ p{
 }
 
 
-/* TELAS MUITO PEQUENAS */
-@media (max-width: 480px){
+/* CELULARES PEQUENOS */
+@media (max-width:480px){
 
     h1{
         font-size: 28px;

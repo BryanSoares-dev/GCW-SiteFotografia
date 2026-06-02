@@ -58,7 +58,7 @@ $local = $_POST['local'];
                 <div class="valor"><?php echo $local; ?></div>
             </div>
 
-            <a href="index.html" class="btn-voltar">
+            <a href="index.php" class="btn-voltar">
                 Voltar ao início
             </a>
 

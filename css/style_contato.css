@@ -11,29 +11,28 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* MAIN */
+
 main{
     width: 100%;
-
     background-color: #c7ab8abe;
-
     padding: 30px;
-
     margin-top: 110px;
 }
 
 h1{
     background-color: #f3746dc5;
-    padding: 10px 10px 10px 30px;
+    padding: 10px 30px;
     width: 70%;
 }
 
 button{
-    padding: 12px 25px 12px 25px;
+    padding: 12px 25px;
     border: none;
     margin-top: 15px;
 }
+
+/* LINKS */
 
 .sessao-link{
     text-decoration: none;
@@ -42,40 +41,45 @@ button{
 }
 
 .sessao{
-    transition: 0.3s;
+    transition: .3s;
     cursor: pointer;
 }
 
 .sessao:hover{
     transform: scale(1.03);
-    opacity: 0.9;
+    opacity: .9;
 }
 
+/* CONTAINER */
 
-/* CONTAINER GERAL */
 .container-contato{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    gap: 50px;
 
     max-width: 1400px;
 
     margin: auto;
 }
 
-
 /* INFORMAÇÕES */
+
 .total-sessao{
-    margin-left: -100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    flex: 1;
 }
 
 .sessao{
     display: flex;
     align-items: flex-start;
+
     gap: 20px;
+
     margin-bottom: 40px;
 }
 
@@ -85,38 +89,36 @@ button{
 
 .info{
     line-height: 1.6;
-
     font-size: 18px;
-
-    color: rgba(0,0,0,0.8);
+    color: rgba(0,0,0,.8);
 }
-
 
 /* FORMULÁRIO */
 
 .caixa-form{
+    flex: 1;
+    max-width: 600px;
     padding: 40px;
-    width: 50%;
 }
 
-
 /* TÍTULO */
+
 .forms-titulo{
     margin-bottom: 30px;
 
-    color: rgba(0, 0, 0, 0.76);
+    color: rgba(0,0,0,.76);
 
     font-size: 35px;
 }
 
-
 /* FORM */
+
 form{
     width: 100%;
 }
 
-
 /* INPUTS */
+
 .nome,
 .email,
 .descricao{
@@ -131,14 +133,16 @@ form{
     font-size: 18px;
 }
 
-.descricao{
-    min-height: 140px;
+/* TEXTAREA */
 
+textarea.descricao{
+    min-height: 140px;
     resize: vertical;
+    font-family: inherit;
 }
 
-
 /* BOTÃO */
+
 .enviar{
     width: 100%;
 
@@ -150,59 +154,50 @@ form{
 
     font-size: 18px;
 
-    color: rgba(0,0,0,0.8);
+    color: rgba(0,0,0,.8);
 
     cursor: pointer;
 
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .enviar:hover{
     transform: scale(1.02);
-    opacity: 0.9;
+    opacity: .9;
 }
 
-
 /* FOOTER */
+
 .foot4{
     background-color: black;
-
     margin-top: 110px;
-
     width: 100%;
 }
 
 .foot5{
     background-color: black;
-
     margin-top: 120px;
-
     width: 100%;
 }
 
+/* SUCESSO */
 
-/* TELA DE SUCESSO */
 .sucesso-box{
-    background-color: rgba(255,255,255,0.35);
+    background-color: rgba(255,255,255,.35);
 
     padding: 60px 50px;
 
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
-
     justify-content: center;
 
     text-align: center;
-
-
 }
 
 .icone-sucesso{
     width: 90px;
-
     height: 90px;
 
     border-radius: 50%;
@@ -210,9 +205,7 @@ form{
     background-color: #F3736D;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     font-size: 45px;
@@ -220,7 +213,6 @@ form{
     color: white;
 
     margin-bottom: 25px;
-
 }
 
 .titulo-sucesso{
@@ -242,8 +234,6 @@ form{
 .texto-sucesso{
     font-size: 18px;
 
-
-
     line-height: 1.7;
 
     margin-bottom: 35px;
@@ -260,14 +250,13 @@ form{
 
     padding: 16px 40px;
 
-
     font-size: 16px;
 
     font-weight: bold;
 
-    transition: 0.3s;
+    transition: .3s;
 
-    box-shadow: 0 5px 15px rgba(243,115,109,0.3);
+    box-shadow: 0 5px 15px rgba(243,115,109,.3);
 }
 
 .btn-voltar:hover{
@@ -275,20 +264,15 @@ form{
 
     background-color: #df5f59;
 
-    box-shadow: 0 8px 20px rgba(243,115,109,0.4);
+    box-shadow: 0 8px 20px rgba(243,115,109,.4);
 }
 
-
 /* TABLETS */
+
 @media (max-width: 1024px){
 
     main{
         padding: 40px 30px;
-    }
-
-    h1,
-    button{
-        width: 100%;
     }
 
     .container-contato{
@@ -298,7 +282,12 @@ form{
 
     .total-sessao{
         width: 100%;
-        max-width: 300px;
+        max-width: 350px;
+    }
+
+    .caixa-form{
+        width: 100%;
+        max-width: 700px;
     }
 
     .forms-titulo{
@@ -306,18 +295,13 @@ form{
     }
 }
 
-
 /* CELULARES */
+
 @media (max-width: 768px){
 
     main{
         padding: 30px 20px;
         margin-top: 50px;
-    }
-
-    h1,
-    button{
-        width: 100%;
     }
 
     .container-contato{
@@ -327,18 +311,15 @@ form{
     .sessao{
         gap: 15px;
     }
-    
-    .total-sessao{
-        margin-left: 80px;
-    }
 
     .info{
         font-size: 16px;
     }
 
     .caixa-form{
-        width: 100%;    
-    }   
+        width: 100%;
+        padding: 20px;
+    }
 
     .nome,
     .email,
@@ -356,7 +337,7 @@ form{
     }
 
     .sucesso-box{
-    padding: 40px 25px;
+        padding: 40px 25px;
     }
 
     .titulo-sucesso{
@@ -374,8 +355,8 @@ form{
     }
 }
 
+/* TELAS PEQUENAS */
 
-/* TELAS MUITO PEQUENAS */
 @media (max-width: 480px){
 
     main{
