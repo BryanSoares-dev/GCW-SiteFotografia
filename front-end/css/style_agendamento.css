@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background-color: rgba(0, 0, 0, 0.192);
+
+    overflow-x: hidden;
+}
+
+
+/* CONTAINER */
+.container{
+    width: 100%;
+
+    max-width: 770px;
+
+    background-color: #F7F3ED;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    overflow: hidden;
+
+
+}
+
+
+/* TOPO */
+.topo{
+    background-color: #C4A77D;
+
+    color: #000;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+.topo h1{
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 3rem;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.topo p{
+    font-size: 1rem;
+
+    line-height: 1.5;
+}
+
+
+/* FORMULÁRIO */
+.formulario{
+    padding: 40px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* TÍTULOS */
+h2{
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    text-align: left;
+
+    font-size: 28px;
+}
+
+
+/* CAMPOS */
+label{
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 500;
+}
+
+input{
+    padding: 15px 20px;
+
+    width: 100%;
+
+    border: 1px solid #ccc;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+
+/* LINHAS */
+.dados,
+.names,
+.infos-pacote{
+    display: flex;
+
+    width: 100%;
+
+    gap: 25px;
+}
+
+
+/* COLUNAS */
+.email,
+.telefone,
+.nome-companheiro,
+.local-evento,
+.nome,
+.sobrenome{
+    width: 100%;
+}
+
+
+/* ESPAÇAMENTOS */
+.email,
+.telefone{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* BOTÕES */
+.envio{
+    background-color: #F3736D;
+    width: 50%;
+    margin-top: 20px;
+
+    padding: 12px 28px;
+    border: none;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.envio:hover,
+.voltar:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.voltar{
+    padding: 12px 28px;
+
+    border: none;
+
+    font-size: 18px;
+
+    color: black;
+
+}
+
+.finalizar{
+    background-color: #F3736D;
+}
+
+.voltar{
+    background-color: #e9ab5e;
+    margin-left: 220px;
+    width: 43.2%;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.finalizar:hover,
+.voltar:hover{
+    transform: scale(1.03);
+
+    opacity: 0.9;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* TABLETS */
+@media (max-width: 1024px){
+
+    .container{
+        max-width: 90%;
+    }
+
+    .topo h1{
+        font-size: 2.5rem;
+    }
+
+    .formulario{
+        padding: 35px;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width: 768px){
+
+    body{
+        padding: 20px 10px;
+    }
+
+    .topo{
+        padding: 30px 15px;
+    }
+
+    .topo h1{
+        font-size: 2rem;
+    }
+
+    .topo p{
+        font-size: 0.95rem;
+    }
+
+    .formulario{
+        padding: 25px 20px;
+    }
+
+    h2{
+        font-size: 24px;
+
+        text-align: center;
+    }
+
+    .dados,
+    .names,
+    .infos-pacote{
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .email,
+    .telefone{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    input{
+        font-size: 15px;
+
+        padding: 14px 16px;
+    }
+
+
+  .finalizar,
+.voltar{
+    width: 45.2%;
+
+    font-size: 16px;
+
+    margin: 0 auto;
+
+    display: block;
+}
+}
+
+
+/* TELAS MUITO PEQUENAS */
+@media (max-width: 480px){
+
+    .topo h1{
+        font-size: 1.7rem;
+    }
+
+    .topo p{
+        font-size: 0.9rem;
+    }
+
+    .formulario{
+        padding: 20px 15px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    input{
+        font-size: 14px;
+    }
+
+    .finalizar,
+    .voltar{
+        padding: 12px;
+    }
+}
+/* Acabamento visual compartilhado */
+.container { border: 1px solid rgba(54,45,34,.14); border-radius: 18px; box-shadow: 0 22px 65px rgba(39,31,22,.14); }
+.topo { background: linear-gradient(135deg,#e8ddca,#f5eee3); }
+.topo h1 { color: #29251f; }
+.formulario { align-items: stretch; }
+input, select, textarea { border: 1px solid rgba(54,45,34,.18); border-radius: 9px; background: #fffefa; transition: border-color .2s, box-shadow .2s; }
+input:focus, select:focus, textarea:focus { border-color: #b49569; box-shadow: 0 0 0 3px rgba(180,149,105,.16); }
+.envio, .finalizar { border-radius: 999px; background: #29251f; color: #fff; }
+.voltar { border-radius: 999px; }

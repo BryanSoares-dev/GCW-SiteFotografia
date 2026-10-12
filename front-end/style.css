@@ -1,0 +1,833 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    overflow-x:hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position: fixed;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 60px);
+    max-width: 1400px;
+
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 35px;
+
+    background: rgba(10, 37, 64, 0.75);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 24px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.20),
+    0 0 0 1px rgba(255,255,255,.03);
+
+    z-index: 9999;
+
+    transition: .3s;
+}
+
+.logo{
+    width: 65px;
+    transition: .3s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+ ul{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    list-style:none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+a{
+    color: white;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #24314C;
+    min-width: 180px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 16px;
+    transition: .3s;
+}
+
+.dropdown-menu li a:hover {
+    background: #16e28a75
+}
+
+/* Exibe ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* =========================
+   BOTÕES HEADER
+========================= */
+
+.home_bot{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.user_area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.user_name{
+    color:white;
+    font-weight:600;
+    font-size:15px;
+}
+
+.button_log{
+    border:none;
+
+    border-radius:50px;
+
+    padding:12px 22px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.button_log:hover{
+    transform:translateY(-3px);
+}
+
+.button_log{
+    background:#16E28A;
+    color:black;
+
+    box-shadow:
+    0 8px 20px rgba(22,226,138,.25);
+}
+
+.button_log.conectar{
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:none;
+}
+
+.button_log.conectar:hover{
+    background:rgba(255,255,255,.15);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    padding-top:120px;
+    min-height:85vh;
+
+    display:flex;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0A2540 0%,
+        #24314C 50%,
+        #0A2540 100%
+    );
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.hero::before{
+    content:'';
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:
+    rgba(22,226,138,.08);
+
+    right:-200px;
+    top:-150px;
+
+    filter:blur(100px);
+}
+
+.hero_container{
+    width:100%;
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:120px 40px 40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.hero_content{
+    flex:1;
+}
+
+.tag{
+    display:inline-block;
+
+    background:
+    rgba(22,226,138,.12);
+
+    color:#16E28A;
+
+    border:1px solid rgba(22,226,138,.3);
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    margin-bottom:25px;
+}
+
+.hero_content h1{
+    color:white;
+
+    font-size:clamp(3rem,5vw,5rem);
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+    font-weight:900;
+}
+
+.hero_content p{
+    color:rgba(255,255,255,.85);
+
+    font-size:1.15rem;
+
+    line-height:1.8;
+
+    max-width:650px;
+
+    margin-bottom:35px;
+}
+
+/* =========================
+   BOTÕES GERAIS
+========================= */
+
+.hero_buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn_primary,
+.btn_secondary{
+    border:none;
+    cursor:pointer;
+
+    border-radius:50px;
+
+    padding:15px 30px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn_primary{
+    background:#16E28A;
+    color:black;
+}
+
+.btn_primary:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(22,226,138,.35);
+}
+
+.btn_secondary{
+    background:#0D3155;
+    color:white;
+}
+
+.btn_secondary:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   DASHBOARD CARD
+========================= */
+
+.hero_card{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+}
+
+.card_dashboard{
+    width:420px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:
+    1px solid rgba(255,255,255,.1);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,.25);
+}
+
+.saldo span,
+.dashboard_info span{
+    color:rgba(255,255,255,.7);
+}
+
+.saldo h2{
+    color:#16E28A;
+
+    margin-top:8px;
+
+    font-size:2.6rem;
+}
+
+.dashboard_info{
+    margin-top:40px;
+
+    display:flex;
+    justify-content:space-between;
+}
+
+.dashboard_info h3{
+    color:white;
+    margin-top:8px;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section{
+    padding:70px 20px;
+}
+
+.section_title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section_title h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.section_title p{
+    color:#666;
+    max-width:650px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+.beneficios{
+    background:#f8fafc;
+}
+
+.beneficios_grid{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+}
+
+.beneficio_card{
+    width:280px;
+
+    padding:30px;
+
+    background:white;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(10,37,64,.08);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.beneficio_card:hover{
+    transform:translateY(-10px);
+}
+
+.beneficio_card h3{
+    color:#0A2540;
+    margin-bottom:15px;
+}
+
+.beneficio_card p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.steps{
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.step_card{
+    width:320px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    text-align:center;
+
+    transition:.35s;
+}
+
+.step_card:hover{
+    transform:translateY(-10px);
+}
+
+.step_number{
+    width:70px;
+    height:70px;
+
+    margin:auto auto 25px;
+
+    border-radius:50%;
+
+    background:#16E28A;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:800;
+    font-size:1.3rem;
+}
+
+/* =========================
+   ESTATÍSTICAS
+========================= */
+
+.estatisticas{
+    background:
+    linear-gradient(
+        135deg,
+        #0A2540,
+        #24314C
+    );
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+    text-align:center;
+}
+
+.estatistica h2{
+    color:#16E28A;
+    font-size:3rem;
+}
+
+.estatistica p{
+    color:white;
+    margin-top:10px;
+}
+
+/* =========================
+   EDUCAÇÃO E INVESTIMENTOS
+========================= */
+
+.section_light{
+    background:#f5f7fa;
+}
+
+.info_card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: .35s;
+}
+
+.info_card a {
+    margin-top: auto;
+}
+
+.btn_saiba {
+    border: none;
+    cursor: pointer;
+    background-color: #16E28A;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.btn_saiba:hover{
+    transform:translateY(-3px);
+}
+
+.cards_grid {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.info_card:hover{
+    transform:translateY(-10px);
+}
+
+.info_card h3{
+    color:#0A2540;
+    margin-bottom:15px;
+}
+
+.info_card p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* =========================
+   CALCULADORA
+========================= */
+
+.section_dark{
+    background:#24314C;
+}
+
+.section_dark .section_title h2{
+    color:white;
+}
+
+.section_dark .section_title p{
+    color:rgba(255,255,255,.8);
+}
+
+.calc_box{
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:50px;
+
+    border-radius:24px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:
+    1px solid rgba(255,255,255,.1);
+}
+
+.calc_box h3{
+    color:white;
+    margin-bottom:20px;
+}
+
+.calc_box p{
+    color:rgba(255,255,255,.85);
+    margin-bottom:30px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+    background:
+    linear-gradient(
+        135deg,
+        #0A2540,
+        #24314C
+    );
+
+    text-align:center;
+}
+
+.cta_content{
+    max-width:800px;
+    margin:auto;
+}
+
+.cta_content h2{
+    color:white;
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.cta_content p{
+    color:rgba(255,255,255,.85);
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#081b30;
+
+    padding:35px 20px;
+}
+
+.footer_container{
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.footer_logo{
+    width:65px;
+}
+
+.footer_container p{
+    color:rgba(255,255,255,.75);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:992px){
+
+    .hero_container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero_content p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero_buttons{
+        justify-content:center;
+    }
+
+    .card_dashboard{
+        width:100%;
+        max-width:450px;
+    }
+}
+
+@media(max-width:768px){
+
+    header{
+        padding:0 20px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .home_bot{
+        gap:8px;
+    }
+
+    .button_log{
+        padding:10px 15px;
+        font-size:13px;
+    }
+
+    .section_title h2{
+        font-size:2rem;
+    }
+
+    .cta_content h2{
+        font-size:2rem;
+    }
+
+    .estatistica h2{
+        font-size:2.3rem;
+    }
+
+    .hero_content h1{
+        font-size:2.8rem;
+    }
+}
+
+@media(max-width:500px){
+
+    .hero_container{
+        padding:120px 20px 40px;
+    }
+
+    .saldo h2{
+        font-size:2rem;
+    }
+
+    .dashboard_info{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .calc_box{
+        padding:30px;
+    }
+}
+
+.info_card,
+.beneficio_card,
+.step_card{
+    background:#fff;
+    border:1px solid rgba(10,37,64,.08);
+    border-radius:24px;
+
+    padding:30px;
+
+    min-height:230px;
+
+    box-shadow:
+    0 8px 30px rgba(0,0,0,.06);
+
+    transition:.35s ease;
+}
+
+.info_card:hover,
+.beneficio_card:hover,
+.step_card:hover{
+    transform:translateY(-10px);
+
+    border-color:#16E28A;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.12);
+}

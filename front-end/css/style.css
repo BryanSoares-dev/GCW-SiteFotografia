@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* ANIMAÇÃO */
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* HEADER */
+header{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.menu{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* ANIMAÇÕES */
+.menu img,
+.menu ul a{
+    opacity: 0;
+    animation: slideDown .8s ease-out forwards;
+}
+
+.menu img{
+    animation-delay: .2s;
+}
+
+.menu ul a:nth-child(1){
+    animation-delay: .4s;
+}
+
+.menu ul a:nth-child(2){
+    animation-delay: .5s;
+}
+
+.menu ul a:nth-child(3){
+    animation-delay: .6s;
+}
+
+.menu ul a:nth-child(4){
+    animation-delay: .7s;
+}
+
+.menu ul a:nth-child(5){
+    animation-delay: .8s;
+}
+
+
+/* LOGO */
+.logo{
+    width: 230px;
+    height: auto;
+
+    padding: 5px 0;
+    margin-left: 20px;
+}
+
+
+/* MENU */
+.menu ul{
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+
+    list-style: none;
+
+    flex-wrap: wrap;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul a li{
+    transition: .3s;
+}
+
+.menu ul a:hover li{
+    color: #c7b28a;
+}
+
+
+/* TIPOGRAFIA */
+h1,
+h2,
+p{
+    font-family: "Playfair Display", serif;
+}
+
+h1,
+h2{
+    font-weight: 400;
+}
+
+p{
+    font-weight: 300;
+}
+
+li{
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    sans-serif;
+
+    font-size: 18px;
+}
+
+
+/* LINHA */
+hr{
+    width: 95%;
+
+    margin: auto;
+
+    border: none;
+
+    height: 1px;
+
+    background-color: #ccc;
+}
+
+
+/* CONTEÚDO */
+.content{
+    flex: 1;
+}
+
+
+/* FOOTER */
+footer{
+    margin-top: auto;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* NAVBAR */
+.container-login{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 30px;
+}
+
+.login{
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+
+    padding: 15px 50px;
+
+    font-size: 20px;
+
+    background-color: #C4A77D;
+    color: aliceblue;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.avatar-navbar{
+    width: 60px;
+    height: 60px;
+}
+
+.perfil-link{
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.nome-navbar{
+    margin-top: 20px;
+}
+
+
+
+/* TABLETS */
+@media (max-width:1024px){
+
+    header{
+        padding: 15px;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul{
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .logo{
+        width: 200px;
+        margin-left: 0;
+    }
+
+    .container-login{
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    li{
+        font-size: 17px;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width:768px){
+
+    .menu{
+        gap: 20px;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        gap: 15px;
+
+        width: 100%;
+    }
+
+    .menu ul a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu ul a li{
+        padding: 8px 0;
+    }
+
+    .logo{
+        width: 180px;
+    }
+
+    .container-login{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .login{
+        padding: 13px 32px;
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    li{
+        font-size: 16px;
+    }
+}
+
+
+/* CELULARES PEQUENOS */
+@media (max-width:480px){
+
+    header{
+        padding: 10px;
+    }
+
+    .logo{
+        width: 150px;
+    }
+
+    .menu ul{
+        gap: 10px;
+    }
+
+    .container-login{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-login a,
+    .login{
+        width: 100%;
+    }
+
+    .login{
+        padding: 13px 20px;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    h2{
+        font-size: 1.3rem;
+    }
+
+    p{
+        font-size: .95rem;
+    }
+
+    li{
+        font-size: 15px;
+    }
+}

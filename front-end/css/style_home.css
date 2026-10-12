@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Playfair Display", serif;
+}
+
+
+/* FUNDO HOME */
+.home_fundo{
+    background-image: url(../img/fundo.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ANIMAÇÃO */
+@keyframes slideIn{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* TEXTOS */
+h1{
+    font-size: 95px;
+    line-height: 1.1;
+
+    color: rgba(255, 255, 255, 0.76);
+}
+
+p{
+    width: 40%;
+
+    font-size: 40px;
+    line-height: 1.5;
+
+    color: rgba(255, 255, 255, 0.76);
+}
+
+li{
+    color: white;
+}
+
+.slogan{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* LINHA */
+hr{
+    background-color: white;
+    border: none;
+    height: 1px;
+}
+
+
+/* HOME */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+
+/* ANIMAÇÕES */
+.home h1,
+.home .slogan,
+.home a{
+    opacity: 0;
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+.home h1,
+.home .slogan{
+    margin: 0;
+}
+
+.home h1{
+    animation-delay: 0.2s;
+}
+
+.home .slogan{
+    animation-delay: 0.4s;
+}
+
+.home a{
+    animation-delay: 0.6s;
+}
+
+
+/* BOTÃO */
+button{
+    border: none;
+    border-radius: 100px;
+
+    padding: 20px 70px;
+
+    margin-top: 30px;
+
+    font-size: 22px;
+
+    background-color: #C4A77D;
+    color: aliceblue;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+
+/* FOOTER */
+footer{
+    margin-top: auto;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 20px;
+}
+
+
+/* TABLETS */
+@media (max-width: 1024px){
+
+    .home{
+        margin-left: 60px;
+        margin-top: 80px;
+    }
+
+    h1{
+        font-size: 70px;
+    }
+
+    p{
+        width: 70%;
+        font-size: 30px;
+    }
+
+    button{
+        font-size: 20px;
+        padding: 18px 60px;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width: 768px){
+
+    .home{
+        margin: 60px 25px;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+
+    p{
+        width: 100%;
+        font-size: 22px;
+        line-height: 1.6;
+    }
+
+    button{
+        width: 100%;
+        max-width: 320px;
+
+        padding: 16px 30px;
+
+        font-size: 18px;
+    }
+}
+
+
+/* TELAS MUITO PEQUENAS */
+@media (max-width: 480px){
+
+    .home{
+        margin: 40px 15px;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    button{
+        font-size: 16px;
+        padding: 14px 20px;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* PORTFÓLIO */
+.portifolio{
+    margin-top: 50vh;
+    padding: 100px 40px;
+    background: rgba(16, 12, 10, 0.945);
+}
+
+.portifolio-intro{
+    max-width: 780px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.portifolio-intro h2{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.portifolio-intro p{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 21px;
+}
+
+.galeria-portifolio{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.foto-portifolio{
+    height: 360px;
+    overflow: hidden;
+    border-radius: 8px;
+    content-visibility: auto;
+    contain-intrinsic-size: auto 360px;
+}
+
+.foto-portifolio img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.foto-portifolio:hover img{
+    transform: scale(1.04);
+}
+
+.foto-portifolio--oculta{
+    display: none;
+}
+
+.ver-mais{
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 50px;
+}
+
+.abrir-categorias{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto 32px;
+    padding: 13px 28px;
+    font-size: 17px;
+}
+
+.categoria-atual{
+    font-weight: 700;
+}
+
+.modal-categorias{
+    position: fixed;
+    inset: 0;
+    width: min(90vw, 460px);
+    height: fit-content;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 14px;
+    background: transparent;
+}
+
+.modal-categorias::backdrop{
+    background: rgba(0, 0, 0, 0.72);
+    backdrop-filter: blur(4px);
+}
+
+.modal-categorias-conteudo{
+    position: relative;
+    padding: 42px 35px 35px;
+    background: #211a16;
+    color: white;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.modal-categorias h3{
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.fechar-categorias{
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: white;
+    font-size: 34px;
+    line-height: 1;
+}
+
+.opcoes-categoria{
+    display: grid;
+    gap: 12px;
+}
+
+.categoria-btn{
+    width: 100%;
+    margin: 0;
+    padding: 14px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 7px;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+.categoria-btn:hover,
+.categoria-btn.ativo{
+    background: #c4a77d;
+    border-color: #c4a77d;
+}
+
+@media (max-width: 1024px){
+    .galeria-portifolio{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px){
+    .portifolio{
+        padding: 70px 25px;
+    }
+
+    .portifolio-intro h2{
+        font-size: 40px;
+    }
+
+    .portifolio-intro p{
+        font-size: 19px;
+    }
+
+    .galeria-portifolio{
+        grid-template-columns: 1fr;
+    }
+
+    .foto-portifolio{
+        height: 320px;
+    }
+
+    .abrir-categorias{
+        width: auto;
+        font-size: 16px;
+    }
+}

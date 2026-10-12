@@ -1,0 +1,43 @@
+.pacotes-page {
+    --ag-card: #fffefa;
+    --ag-text: #29251f;
+    --ag-muted: #736b60;
+    --ag-border: rgba(54,45,34,.16);
+    --ag-accent: #b49569;
+    --ag-accent-dark: #725633;
+    --ag-radius-xl: 18px;
+    --ag-radius-md: 10px;
+}
+.modal-overlay { position: fixed; inset: 0; z-index: 2000; display: flex; align-items: center; justify-content: center; padding: 18px; overflow-y: auto; background: rgba(30,26,21,.68); backdrop-filter: blur(8px); }
+.modal-overlay[hidden] { display: none; }
+.modal-agendamento { position: relative; width: min(100%, 540px); max-height: min(92vh, 900px); overflow-y: auto; margin: auto; padding: clamp(24px,5vw,38px); color: var(--ag-text); background: var(--ag-card); border: 1px solid var(--ag-border); border-radius: var(--ag-radius-xl); box-shadow: 0 28px 90px rgba(0,0,0,.3); animation: modal-in .22s ease-out; }
+.modal-agendamento .badge { display: inline-block; margin: 0 0 10px; padding: 6px 11px; border-radius: 999px; background: #f1e9dc; color: var(--ag-accent-dark); font: 700 .75rem Inter, Arial, sans-serif; }
+.modal-agendamento h2 { margin: 0 42px 18px 0; font: 500 1.55rem/1.25 'Playfair Display', Georgia, serif; }
+.ag-fechar { position: absolute; top: 17px; right: 17px; width: 38px; height: 38px; border: 1px solid var(--ag-border); border-radius: 50%; background: transparent; color: var(--ag-muted); font-size: 1.35rem; cursor: pointer; }
+.ag-resumo { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 20px; padding: 15px 17px; border: 1px solid var(--ag-border); border-left: 4px solid var(--ag-accent); border-radius: 10px; background: #f7f3ec; }
+.ag-plano span, .ag-total span { display: block; color: var(--ag-muted); font: 500 .78rem Inter, Arial, sans-serif; }
+.ag-plano strong { font: 700 .98rem Inter, Arial, sans-serif; }
+.ag-total { text-align: right; }
+.ag-total strong { color: var(--ag-accent-dark); font: 700 1.25rem Inter, Arial, sans-serif; }
+.input-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 13px; }
+.input-group label, #resultadoPix label { color: var(--ag-muted); font: 600 .82rem Inter, Arial, sans-serif; }
+.input-group input, #resultadoPix textarea { width: 100%; min-height: 46px; padding: 10px 13px; border: 1px solid var(--ag-border); border-radius: 9px; background: #fff; color: var(--ag-text); font: 400 .94rem Inter, Arial, sans-serif; }
+.input-group input:focus, #resultadoPix textarea:focus { outline: 0; border-color: var(--ag-accent); box-shadow: 0 0 0 3px rgba(180,149,105,.16); }
+.ag-linha { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ag-pix { margin: 6px 0 14px; padding: 15px; border: 1px dashed rgba(114,86,51,.35); border-radius: 10px; background: #f8f4ed; }
+.ag-pix p, .ag-nota { margin: 0; color: var(--ag-muted); font: 400 .83rem/1.6 Inter, Arial, sans-serif; }
+.ag-confirmar, #agCopiarPix { width: 100%; min-height: 48px; margin: 4px 0 0; border: 0; border-radius: 999px; background: var(--ag-text); color: #fff; font: 600 .92rem Inter, Arial, sans-serif; cursor: pointer; }
+.ag-confirmar:hover, #agCopiarPix:hover { background: #a95749; }
+.ag-confirmar:disabled { opacity: .65; cursor: wait; }
+.ag-nota { margin-top: 10px; text-align: center; font-size: .75rem; }
+#agErro { margin: 0 0 12px; padding: 10px 12px; border-radius: 8px; background: #fff0eb; color: #81382f; font: 500 .86rem/1.5 Inter, Arial, sans-serif; }
+#resultadoPix[hidden] { display: none; }
+#resultadoPix h3 { margin: 0 0 10px; font: 500 1.45rem 'Playfair Display', Georgia, serif; }
+#resultadoPix > p { color: var(--ag-accent-dark); font: 700 1.1rem Inter, Arial, sans-serif; }
+#agPixImagem { display: block; border: 1px solid var(--ag-border); border-radius: 10px; }
+#resultadoPix textarea { display: block; min-height: 90px; margin: 6px 0 10px; resize: vertical; }
+#agPixFatura { display: block; margin-top: 14px; color: var(--ag-accent-dark); font: 600 .9rem Inter, Arial, sans-serif; text-align: center; }
+#agPixFatura[hidden] { display: none; }
+@keyframes modal-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@media(max-width: 520px) { .ag-linha { grid-template-columns: 1fr; gap: 0; } .ag-total { text-align: left; } .ag-resumo { align-items: flex-start; flex-direction: column; } }
+@media(prefers-reduced-motion: reduce) { .modal-agendamento { animation: none; } }

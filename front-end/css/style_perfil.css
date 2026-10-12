@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    sans-serif;
+
+    background-color: #f3ede4;
+}
+
+
+/* TIPOGRAFIA */
+h1,
+h2{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+
+/* CONTEÚDO */
+.content{
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 60px 20px;
+}
+
+
+/* CARTÃO DE PERFIL */
+.perfil-container{
+    width: 100%;
+    max-width: 640px;
+
+    background-color: #F7F3ED;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    overflow: hidden;
+}
+
+
+/* TOPO */
+.perfil-topo{
+    background-color: #C4A77D;
+
+    color: #000;
+
+    text-align: center;
+
+    padding: 45px 20px 35px;
+}
+
+.avatar-wrapper{
+    position: relative;
+
+    width: 130px;
+    height: 130px;
+
+    margin: 0 auto 18px;
+}
+
+.avatar{
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid #fff;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-editar{
+    position: absolute;
+
+    bottom: 2px;
+    right: 2px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: none;
+
+    background-color: #F3736D;
+    color: #fff;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.avatar-editar:hover{
+    transform: scale(1.08);
+    opacity: 0.9;
+}
+
+.perfil-topo h1{
+    font-size: 2.2rem;
+
+    margin-bottom: 6px;
+}
+
+.perfil-topo p{
+    font-size: 1rem;
+
+    color: rgba(0, 0, 0, 0.65);
+}
+
+
+/* CORPO */
+.perfil-corpo{
+    padding: 40px 50px 45px;
+}
+
+
+/* SEÇÕES */
+.secao{
+    margin-bottom: 35px;
+}
+
+.secao:last-child{
+    margin-bottom: 0;
+}
+
+.secao h2{
+    font-size: 22px;
+
+    margin-bottom: 18px;
+
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* CAMPOS DE DADOS (LEITURA) */
+.campo{
+    margin-bottom: 20px;
+}
+
+.campo label{
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.campo-valor{
+    width: 100%;
+
+    padding: 14px 18px;
+
+    background-color: #fff;
+
+    border: 1px solid #ddd;
+
+    font-size: 16px;
+
+    color: rgba(0, 0, 0, 0.85);
+}
+
+
+/* INPUTS EDITÁVEIS */
+input{
+    padding: 14px 18px;
+
+    width: 100%;
+
+    border: 1px solid #ccc;
+
+    outline: none;
+
+    font-size: 16px;
+
+    background-color: #fff;
+
+    transition: 0.3s;
+}
+
+input:focus{
+    border-color: #C4A77D;
+}
+
+input::placeholder{
+    color: #999;
+}
+
+.linha-senha{
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.linha-senha .campo{
+    flex: 1;
+
+    margin-bottom: 0;
+}
+
+
+/* BOTÕES */
+button{
+    border: none;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.02);
+    opacity: 0.92;
+}
+
+.btn-salvar{
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    background-color: #F3736D;
+    color: #fff;
+
+    font-weight: 600;
+}
+
+.acoes-conta{
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 45px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #ddd;
+}
+
+.btn-sair{
+    flex: 1;
+
+    padding: 14px;
+
+    border-radius: 100px;
+
+    background-color: #C4A77D;
+    color: #fff;
+
+    font-weight: 600;
+}
+
+.btn-excluir{
+    flex: 1;
+
+    padding: 14px;
+
+    border-radius: 100px;
+
+    background-color: transparent;
+    color: #c0392b;
+
+    border: 1px solid #c0392b;
+
+    font-weight: 600;
+}
+
+.btn-excluir:hover{
+    background-color: #c0392b;
+    color: #fff;
+    opacity: 1;
+}
+
+
+/* TABLETS */
+@media (max-width: 1024px){
+
+    .perfil-container{
+        max-width: 90%;
+    }
+
+    .perfil-corpo{
+        padding: 35px;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width: 768px){
+
+    .content{
+        padding: 40px 15px;
+    }
+
+    .perfil-topo{
+        padding: 35px 20px 30px;
+    }
+
+    .avatar,
+    .avatar-wrapper{
+        width: 105px;
+        height: 105px;
+    }
+
+    .perfil-topo h1{
+        font-size: 1.8rem;
+    }
+
+    .perfil-corpo{
+        padding: 28px 22px;
+    }
+
+    .secao h2{
+        font-size: 20px;
+    }
+
+    .linha-senha{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .acoes-conta{
+        flex-direction: column;
+    }
+}
+
+
+/* TELAS MUITO PEQUENAS */
+@media (max-width: 480px){
+
+    .perfil-topo h1{
+        font-size: 1.5rem;
+    }
+
+    .perfil-corpo{
+        padding: 22px 16px;
+    }
+
+    .campo-valor,
+    input{
+        font-size: 15px;
+        padding: 12px 14px;
+    }
+
+    .btn-salvar,
+    .btn-sair,
+    .btn-excluir{
+        font-size: 15px;
+        padding: 12px;
+    }
+}
